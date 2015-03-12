@@ -1,3 +1,3 @@
 # OpenComputers
-OpenComputers programs
-Some programs written for OpenComputers by me.
+OpenComputers programs by shortybsd
+
