@@ -1,6 +1,6 @@
 -- Show functions by shortybsd
 local component = require("component")
-local blah = blah.component -- change this
+local blah = component.blah -- change this
 
 local str = {}
 for x,y in pairs(blah) do
