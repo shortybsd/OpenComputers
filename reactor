@@ -40,16 +40,6 @@ end
 -- resolution 80/25
 gpu.setResolution(40,19)
 
---[[
-local str = {}
-for x,y in pairs(tur) do
-  table.insert(str,x)
-end
-table.sort(str)
-str = table.concat(str,', ')
-print(str)
-]]
-
 function round(num, idp)
   local mult = 10^(idp or 0)
   return math.floor(num * mult + 0.5) / mult
