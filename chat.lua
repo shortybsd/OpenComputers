@@ -11,6 +11,7 @@ local es = bank.getEnergyStored()
 local days = os.time()
 local daysf = days*1000/60/60-6000
 local daysp = daysf/24000
+
 cb.setName("§2ElementTech")
 -- 3 username
 -- 4 what they typed
@@ -21,6 +22,10 @@ while true do
       --print(os.date(" %I %M %p"))
       --int.request("http://worldclockapi.com/api/json/cst/now")()
       print(os.date("Current time is: %X%p"))
+      local fs = require("filesystem")
+      local f = io.open("/home/chat.log","a")
+      f:write(os.date("%I:%M%p ").." "..ed[3]..": "..ed[4].."\n")
+      f:close()
       print(ed[3]..": "..ed[4])
     end
     if ed[4] == "hello" or ed[4]=="hi"  then
