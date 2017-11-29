@@ -32,7 +32,7 @@ while true do
     -- TIME command
     if ed[4]=="!time" then
       cb.say("§6Time in Minecraft is currently "..os.date("%I:%M %p"))
-      cb.say("§6"..math.floor(daysp).." days have passed in Minecraft.")
+      cb.say("§6"..math.floor(daysp).." days have passed in Minecraft since last server restart.")
     end    
     if ed[4]=="!rfpt" then
       cb.say("Enery Stored: "..es.." RF/t: "..math.floor(rfpt))
