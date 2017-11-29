@@ -6,12 +6,22 @@ local cb = comp.chat_box
 local event = require("event")
 local int = require("internet")
 local bank = comp.capacitor_bank
+local gpu = comp.gpu
 local rfpt = bank.getAverageOutputPerTick()
 local es = bank.getEnergyStored()
 local days = os.time()
 local daysf = days*1000/60/60-6000
 local daysp = daysf/24000
-
+local colors = {
+black = 0x000000, green = 0x00FF00, lightGray = 0xBBBBBB, white = 0xFFFFFF
+}
+gpu.setBackground(colors.black)
+gpu.setForeground(colors.green)
+gpu.fill(1,1,300,300," ")
+gpu.set(1,30,"########## Commands ##########")
+gpu.set(1,31,"!Time - Shows the time and how many Minecraft days since server was last restarted.")
+gpu.set(1,32,"!rfpt - Shows the RF/t load on the capacitor.")
+gpu.set(1,33,"!colors - Shows all the color codes as well as bold, italic, strikeout and a few others.")
 cb.setName("§2ElementTech")
 -- 3 username
 -- 4 what they typed
