@@ -1,4 +1,4 @@
--- Designed and written by Todd Showalter
+-- Designed and written by Todd S.
 -- (shortybsd)
 
 local component = require("component")
